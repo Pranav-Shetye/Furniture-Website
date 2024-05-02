@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: whitesmoke;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.logo{
+    font-size: 20px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.logo span{
+    color: red;
+}
+
+.logo:hover{
+    font-size: 23px;
+    transition: 0.3s;
+}
+
+ul{
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: red;
+    font-size: 22px;
+    transition: 0.3s;
+}
+
+
+/* Home */
+
+section.home{
+    min-height: 100vh;
+    background-image: url('https://images8.alphacoders.com/126/1262109.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+    padding-left: 150px;
+}
+
+.intro h1 span{
+    color: red;
+}
+
+.intro h4{
+    font-size: 17px;
+}
+
+.intro .btn{
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 10px;
+    border: 0;
+    background-color: red;
+}
+
+.intro .btn a{
+    color: white;
+}
+
+.intro .btn a:hover{
+    transition: 0.2s;
+    font-size: 18px;
+}
+
+.intro .btn:hover{
+    transition: 0.2s;
+    background-color: green;
+}
+
+
+/* Shop */
+
+section.shop{
+    min-height: 91vh;
+    padding: 70px;
+    margin-top: 100px;
+}
+
+.shop h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.shop h1 span{
+    color: red;
+}
+
+.prod{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.prodcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 530px;
+    width: 360px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.prodcard img{
+    border-top-left-radius: 10px;
+    width: 100%;
+    height: 400px;
+}
+
+.prodcard-div1{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.prodcard-div2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.prodcard-div2 .star{
+    font-size: 22px;
+    color: red;
+}
+
+.prodcard-div2 .cart{
+    font-size: 25px;
+    color: green;
+    cursor: pointer;
+}
+
+.prodcard-div2 .cart:hover{
+    font-size: xx-large;
+    transition: 0.2s;
+}
+
+
+
+/* New */
+
+section.new{
+    min-height: 91vh;
+    padding: 70px;
+    margin-top: 100px;
+}
+
+.new h1{
+    text-align: center;
+    font-size: xx-large;
+}
+
+.new h1 span{
+    color: red;
+}
+
+.newprod{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 15px;
+    flex-wrap: wrap;
+}
+
+.newprodcard{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 530px;
+    width: 360px;
+}
+
+.newprodcard img{
+    width: 100%;
+    height: 400px;
+}
+
+.newprodcard-div1{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.newprodcard-div2{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.newprodcard-div2 .star{
+    font-size: 22px;
+    color: red;
+}
+
+.newprodcard-div2 .newcart{
+    font-size: 25px;
+    color: green;
+    cursor: pointer;
+}
+
+.newprodcard-div2 .newcart:hover{
+    font-size: xx-large;
+    transition: 0.2s;
+}
+
+
+/* About */
+
+section.about{
+    min-height: 91vh;
+    padding: 70px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 100px;
+}
+
+.about h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;    
+}
+
+.about h1 span{
+    color: red;
+}
+
+.abtdiv{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.abtdesc{
+    display: flex;
+    flex-direction: column;
+    line-height: 40px;
+    padding-top: 35px;
+    padding-right: 10px;
+    align-items: center;
+}
+
+.abtdesc span{
+    font-size: 40px;
+    color: red;
+}
+
+.abtdesc p{
+    font-size: large;
+}
+
+.abtdiv img{
+    padding: 10px;
+}
+
+
+/* Contact */
+section.contact{
+    padding: 40px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0px;
+    margin-top: 0px;
+}
+
+.contact h1{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 10px;    
+}
+
+.contact h1 span{
+    color: red;
+}
+
+.contdiv{
+    background-image: url('https://images4.alphacoders.com/260/260758.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contdiv h1{
+    font-size: xx-large;
+}
+
+.continp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+}
+
+.continp input{
+    padding: 10px;
+    width: 500px;
+    border: 0;
+    font-size: x-large;
+}
+
+.continp button{
+    padding: 10px;
+    font-size: x-large;
+    cursor: pointer;
+    border: 0;
+    background-color: green;
+    color: white;
+}
+
+.continp button:hover{
+    background-color: rgb(37, 179, 35);
+}
+
+
+
+/* Footer */
+
+.footer{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 15px;
+    font-size: large;
+    justify-content: space-evenly;
+    cursor: default;
+    gap: 50px;
+}
+
+.footercontent{
+    display: flex;
+    gap: 100px;
+}
+
+.cr{
+    padding-bottom: 10px;
+}
+
+.name{
+    font-style: italic;
+}
+
+.name .h{
+    color: red;
+}
+
+.div1a i:hover{
+    cursor: pointer;
+    color: red;
+    font-size: 25px;
+    transition: 0.2s;
+}
+
+.div1b p:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.div2a p:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.div2b i:hover{
+    cursor: pointer;
+    color: red;
+}
+
+
+
+@media(max-width:848px){
+    nav{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    ul{
+        gap: 10px;
+        font-size: 18px;
+    }
+    .logo{
+        text-align: center;
+    }
+
+    section{
+        margin-top: 80px;
+        padding: 20px;
+    }
+
+    .intro h1{
+        padding-left: 0px;
+    }
+
+    section.shop{
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    section.new{
+        padding: 20px;
+        margin-top: 100px;
+    }
+
+    .abtdiv{
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .abtdesc{
+        font-size: smaller;
+        padding-left: 10px;
+    }
+
+    .abtdiv img{
+        width: 100%;
+    }
+
+    .contdiv{
+        height: 200px;
+    }
+
+    .continp{
+
+        flex-direction: row;
+    }
+
+    .continp input{
+        width: 230px;
+        padding: 1px;
+    }
+
+    .continp button{
+        font-size: 16px;
+        padding: 6.5px;
+    }
+
+    .contdiv h1{
+        font-size: 27px;
+    }
+
+    .footer{
+        gap: 10px;
+    }
+
+    .footercontent{
+        flex-direction: column;
+        gap: 13px;
+        padding: 10px;
+    }
+
+    .cr{
+        padding-bottom: 5px;
+        font-size: 14px;
+    }
+
+}
